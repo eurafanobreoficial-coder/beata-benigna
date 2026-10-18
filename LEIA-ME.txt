@@ -1,0 +1,22 @@
+BEATA BENIGNA CARDOSO DA SILVA — PRIMEIRA VERSÃO
+
+O que há nesta versão:
+- Página inicial com identidade católica tradicional.
+- Seções História, Oração, Reflexão e Sobre o projeto.
+- Compartilhamento de oração/reflexão usando os recursos do navegador.
+- Favorito salvo localmente no dispositivo.
+- Arquivos PWA básicos (manifesto, ícone e cache offline).
+
+IMPORTANTE:
+Esta é uma primeira versão web instalável (PWA), não um APK pronto.
+Para instalar como aplicativo no Android, publique estes arquivos em um endereço HTTPS
+e abra o endereço no Chrome Android; use o menu do navegador e escolha
+"Instalar app" ou "Adicionar à tela inicial" (o nome pode variar).
+
+Para gerar um APK nativo e publicar na Google Play, será necessário um passo adicional
+de empacotamento e testes. Esta pasta pode servir como base do projeto.
+
+Como testar rapidamente:
+1. Abra index.html no navegador para ver o conteúdo básico.
+2. Para testar instalação PWA e cache offline, sirva a pasta por HTTPS ou localhost.
+3. Revise a biografia com fontes eclesiais confiáveis antes de publicar.

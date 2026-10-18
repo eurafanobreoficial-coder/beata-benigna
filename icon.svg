@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="110" fill="#6f5124"/>
+<circle cx="256" cy="256" r="184" fill="#fbf7ed" stroke="#d7b96f" stroke-width="10"/>
+<path d="M238 130h36v96h83v34h-83v122h-36V260h-83v-34h83z" fill="#8b682c"/>
+<path d="M150 385Q256 430 362 385" fill="none" stroke="#d7b96f" stroke-width="8" stroke-linecap="round"/>
+<text x="256" y="350" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#6f5124">BENIGNA</text>
+</svg>

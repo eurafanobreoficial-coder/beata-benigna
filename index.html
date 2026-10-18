@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6f5124">
+<meta name="description" content="Aplicativo devocional dedicado à Beata Benigna Cardoso da Silva.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Beata Benigna Cardoso da Silva</title>
+<style>
+:root{--gold:#a47a32;--gold-dark:#6f5124;--cream:#fbf7ed;--paper:#fffdf8;--ink:#302719;--muted:#756b5b;--line:#e7dcc5}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+header{background:linear-gradient(145deg,#4f391a,#8b682c);color:#fff8e9;padding:28px 20px 24px;text-align:center}
+.ornament{font-size:23px;color:#f0d99f;letter-spacing:8px}
+header h1{font-size:clamp(25px,5vw,36px);line-height:1.15;margin:10px auto;max-width:650px}
+header p{font-family:Arial,sans-serif;font-size:13px;letter-spacing:1.2px;margin:8px 0 0;color:#f5e7c6}
+main{max-width:760px;margin:auto;padding:18px 15px 34px}
+.hero{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:23px 20px;text-align:center;box-shadow:0 7px 22px #5b43110d}
+.medallion{width:82px;height:82px;margin:0 auto 12px;border:1px solid #d8bc7c;border-radius:50%;display:grid;place-items:center;background:#f5ebd3;color:var(--gold-dark);font-size:34px}
+h2{font-size:23px;margin:10px 0;color:var(--gold-dark)}.hero p,.content p{line-height:1.7;font-size:16px}
+.kicker{font:700 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:1.7px;color:var(--gold)}
+.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0}
+button,.navbtn{font:600 14px Arial,sans-serif;border:1px solid var(--line);border-radius:13px;background:var(--paper);color:var(--gold-dark);padding:14px 10px;cursor:pointer}
+button:active,.navbtn:active{transform:scale(.99)}.primary{background:var(--gold-dark);color:white;border-color:var(--gold-dark)}
+.content{display:none;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:13px}
+.content.active{display:block}.content h2{margin-top:0}.note{background:#f5ecd8;border-left:3px solid var(--gold);padding:12px 14px;border-radius:5px;line-height:1.6}
+.prayer{font-style:italic}.small{font:12px/1.5 Arial,sans-serif;color:var(--muted)}
+footer{text-align:center;padding:18px 15px 26px;color:var(--muted);font:12px/1.6 Arial,sans-serif}
+footer strong{color:var(--gold-dark)}.bottomnav{position:sticky;bottom:0;background:#fbf7edf2;backdrop-filter:blur(8px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:7px;padding:9px;z-index:3}
+.bottomnav button{padding:10px 12px;font-size:12px;border-radius:20px}
+@media(min-width:600px){.actions{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{padding:30px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="ornament">✦ ✧ ✦</div>
+  <h1>Beata Benigna<br>Cardoso da Silva</h1>
+  <p>FÉ • CORAGEM • ESPERANÇA</p>
+</header>
+<main>
+  <section class="hero">
+    <div class="medallion" aria-hidden="true">✝</div>
+    <div class="kicker">Bem-vindo(a)</div>
+    <h2>Uma vida que inspira a fé</h2>
+    <p>Este espaço é dedicado à memória e ao testemunho cristão da Beata Benigna Cardoso da Silva. Que estes conteúdos ajudem você a rezar, refletir e caminhar com esperança.</p>
+    <div class="note">“Senhor, fortalecei em nós a fé, a coragem para escolher o bem e o amor que acolhe cada pessoa.”</div>
+  </section>
+  <div class="actions">
+    <button class="primary" data-page="historia">📖 Conheça a história</button>
+    <button data-page="oracao">🙏 Oração</button>
+    <button data-page="reflexao">🕯️ Reflexão</button>
+    <button data-page="sobre">ℹ️ Sobre o projeto</button>
+  </div>
+  <section id="historia" class="content">
+    <h2>Conheça a história</h2>
+    <p>Benigna Cardoso da Silva foi uma jovem cearense cuja história é lembrada pela fé e pelo martírio. Sua memória inspira muitos fiéis a permanecerem firmes no amor a Deus e no respeito à dignidade humana.</p>
+    <p>Este aplicativo poderá receber uma biografia mais completa, organizada em etapas: infância e origens, vida de fé, martírio e reconhecimento pela Igreja.</p>
+    <div class="note"><strong>Nota editorial:</strong> confira datas, citações e detalhes biográficos em fontes eclesiais confiáveis antes de publicar uma versão definitiva.</div>
+  </section>
+  <section id="oracao" class="content">
+    <h2>Oração para pedir força e coragem</h2>
+    <p class="prayer">Deus de bondade, fonte de toda esperança, ajudai-nos a viver com fé, coragem e caridade. Que o testemunho da Beata Benigna nos recorde o valor da dignidade humana e a importância de permanecer no caminho do bem. Acolhei nossas intenções e ensinai-nos a tratar cada pessoa com respeito e amor. Por Cristo, nosso Senhor. Amém.</p>
+    <button class="primary" id="sharePrayer">Compartilhar oração</button>
+  </section>
+  <section id="reflexao" class="content">
+    <h2>Reflexão do dia</h2>
+    <p>Ser fiel a Deus também aparece nas escolhas simples: agir com bondade, defender a dignidade de cada pessoa e não permitir que o medo apague a esperança.</p>
+    <p>Hoje, procure transformar sua fé em uma atitude concreta de respeito, oração ou ajuda a alguém.</p>
+    <button class="primary" id="shareReflection">Compartilhar reflexão</button>
+  </section>
+  <section id="sobre" class="content">
+    <h2>Sobre este aplicativo</h2>
+    <p>Um projeto devocional para divulgar a história, a espiritualidade e mensagens de fé ligadas à Beata Benigna Cardoso da Silva.</p>
+    <p><strong>Assinatura:</strong> Movimento Benigna | Mensageiros da Fé</p>
+    <p class="small">Esta primeira versão é um protótipo. O conteúdo pode ser ampliado e revisado antes da publicação oficial.</p>
+  </section>
+  <section id="favoritos" class="content">
+    <h2>Minha mensagem favorita</h2>
+    <p id="favoriteText">Você ainda não salvou uma mensagem.</p>
+    <button id="saveFavorite">♡ Salvar mensagem de hoje</button>
+  </section>
+</main>
+<nav class="bottomnav" aria-label="Navegação principal">
+  <button data-page="inicio" class="primary">Início</button>
+  <button data-page="historia">História</button>
+  <button data-page="oracao">Oração</button>
+  <button data-page="favoritos">Favoritos</button>
+</nav>
+<footer>
+  <strong>Movimento Benigna | Mensageiros da Fé</strong><br>
+  Um espaço de oração, memória e esperança.
+</footer>
+<script>
+const pages=[...document.querySelectorAll('.content')];
+function showPage(id){
+  pages.forEach(p=>p.classList.toggle('active',p.id===id));
+  if(id==='inicio') pages.forEach(p=>p.classList.remove('active'));
+  if(id==='favoritos') renderFavorite();
+  document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('primary',b.dataset.page===id));
+  if(id!=='inicio') document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
+  else window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+const favoriteKey='benignaFavoriteV1';
+const daily='Ser fiel a Deus também aparece nas escolhas simples: agir com bondade e respeitar a dignidade de cada pessoa.';
+function renderFavorite(){document.getElementById('favoriteText').textContent=localStorage.getItem(favoriteKey)||'Você ainda não salvou uma mensagem.';}
+document.getElementById('saveFavorite').addEventListener('click',()=>{localStorage.setItem(favoriteKey,daily);renderFavorite();});
+async function shareText(text){
+  if(navigator.share){try{await navigator.share({title:'Beata Benigna Cardoso da Silva',text});return;}catch(e){}}
+  try{await navigator.clipboard.writeText(text);alert('Texto copiado. Agora você pode colar e compartilhar.');}
+  catch(e){prompt('Copie o texto para compartilhar:',text);}
+}
+document.getElementById('sharePrayer').addEventListener('click',()=>shareText('Oração para pedir força e coragem\\n\\nDeus de bondade, fonte de toda esperança, ajudai-nos a viver com fé, coragem e caridade. Que o testemunho da Beata Benigna nos recorde o valor da dignidade humana e a importância de permanecer no caminho do bem. Acolhei nossas intenções e ensinai-nos a tratar cada pessoa com respeito e amor. Por Cristo, nosso Senhor. Amém.\\n\\nMovimento Benigna | Mensageiros da Fé'));
+document.getElementById('shareReflection').addEventListener('click',()=>shareText('Reflexão do dia\\n\\nSer fiel a Deus também aparece nas escolhas simples: agir com bondade, defender a dignidade de cada pessoa e não permitir que o medo apague a esperança.\\n\\nMovimento Benigna | Mensageiros da Fé'));
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "Beata Benigna Cardoso da Silva",
+  "short_name": "Beata Benigna",
+  "description": "Aplicativo devocional do Movimento Benigna | Mensageiros da Fé",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf7ed",
+  "theme_color": "#6f5124",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
